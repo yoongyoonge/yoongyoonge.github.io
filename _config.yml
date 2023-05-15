@@ -45,8 +45,9 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                yunjin nam
+  email:               namyunjin0912@gmail.com
+  picture:             /assets/img/me.jpg
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -73,8 +74,8 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          '#4fb1ba'
+accent_image:          /assets/img/me.jpg
+accent_color:          '#A85641'
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://qwtel.com/hydejack/docs/configuration/>
@@ -276,7 +277,7 @@ sass:
 menu:
   - title: study
     url:   /study/
-  - title: test_cate
-    url:   /test_cate/
+  - title: blog
+    url:   /blog/
   - title: About
     url:   /about/

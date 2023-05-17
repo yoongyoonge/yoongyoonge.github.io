@@ -19,17 +19,17 @@ author: yye
 Repositories 선택 >> New 클릭 >> Repository name 입력 >> Add a README file 체크 >> Create repository 클릭 >> repository 생성 완료!
 ```
 
-<p align="center"><img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/03a8c223-16d2-43b1-a2b5-ac859aaf8ef7"></p>
+<p align="center"><img width="650" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/03a8c223-16d2-43b1-a2b5-ac859aaf8ef7"></p>
 
 <br>
 
-<p align="center"><img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/fa839f10-634d-4ca0-8ed8-5a345321f3c2"></p>
+<p align="center"><img width="550" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/fa839f10-634d-4ca0-8ed8-5a345321f3c2"></p>
 
 !) Repository name 입력 시 {사용자이름}.github.io 로 하지 않으면 제대로 작동하지 않을 수 있다. <br> (예시는 이미 git blog를 생성 한 이후 이므로 사용자이름으로 입력하지 않았다!)
 
 <br>
 
-<p align="center"><img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/fe047e30-be12-466e-9a40-16aa28a029bc"></p>
+<p align="center"><img width="550" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/fe047e30-be12-466e-9a40-16aa28a029bc"></p>
 
 <br>
 
@@ -43,7 +43,7 @@ repository >> Settings >> Pages >> Github Pages 를 참고하자!
 
 <br>
 
-<p align="center"><img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/dc41dea4-3615-4349-826c-b5f8407ff8f8"></p>
+<p align="center"><img width="650" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/dc41dea4-3615-4349-826c-b5f8407ff8f8"></p>
 
 
     (터미널 기준 세팅 방법) 
@@ -53,7 +53,7 @@ repository >> Settings >> Pages >> Github Pages 를 참고하자!
     * git repository 주소 확인 방법 
         code 클릭 >> https:// ~~ 주소 복사 
 
-<p align="center"><img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/c8a7f4aa-8799-477b-a18c-3edc3119b1dc"></p>
+<p align="center"><img width="650" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/c8a7f4aa-8799-477b-a18c-3edc3119b1dc"></p>
 
     2.3 cd {repository name} 
     2.4 echo "Hello World" > index.html 
@@ -61,11 +61,11 @@ repository >> Settings >> Pages >> Github Pages 를 참고하자!
     2.6 git commit -m "Initial commit" 
     2.7 git push -u origin main 
 
-<p align="center"><img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/e2408076-f822-48ed-9593-2e0d0213ae98"></p>
+<p align="center"><img width="650" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/e2408076-f822-48ed-9593-2e0d0213ae98"></p>
 
 #### 1에서 생성했던 repository name ({사용자이름}.github.io) 을 주소창에 입력하면 "Hello World!"의 문구가 보이면서 내가 만든 블로그의 초기 화면이 나온다! <br>
 
-<p align="center"><img width="359" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/ec0a2c48-3881-43a7-b8e0-4b4377c8bd20"></p>
+<p align="center"><img width="450" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/ec0a2c48-3881-43a7-b8e0-4b4377c8bd20"></p>
 
 (이 포스팅에서는 이미 yoongyoonge.github.io가 생성되어있기 때문에 주소창 입력 예시 화면만 캡쳐)
 

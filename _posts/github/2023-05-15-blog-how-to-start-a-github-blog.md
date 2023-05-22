@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 1. github 블로그 만들기 준비 및 환경세팅
+title: 1. github 블로그 만들기 - 준비 및 환경세팅
 categories: [blog]
 category: blog
 description: >
-    github 블로그를 세팅하는 과정을 정리합니다.
+    github Blog 생성 / github Page 설정
 author: yye
 ---
 

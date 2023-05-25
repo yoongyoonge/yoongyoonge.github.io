@@ -69,15 +69,14 @@ $ bundle exec jekyll serve # 로컬 개발 모드 실행
 
 
 
-<br><br> 참고 사이트 <br>
-[jekyll][jekylllink]
+<br><br> 
+참고 사이트 
+<br>
 
-[jekylllink]: https://jekyllrb.com/
+[jekyll](https://jekyllrb.com/)
 
-[gem][gemlink]
+[gem](https://guides.rubygems.org/what-is-a-gem/)
 
-[gemlink]: https://guides.rubygems.org/what-is-a-gem/
+[bundler](https://bundler.io/)
 
-[bundler][bundlerlink]
-
-[bundlerlink]: https://bundler.io/
+[Jekyll 블로그 시작하기](https://nachwon.github.io/jekyllblog/)

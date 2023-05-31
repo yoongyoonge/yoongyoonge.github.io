@@ -252,7 +252,7 @@ To set an image manually, you have to provide an URL to the author's `picture` k
 ~~~yml
 # file: _config.yml
 author:
-  picture:  /assets/img/me.jpg
+  picture:  /assets/img/yye.jpg
 ~~~
 
 If you'd like to provide multiple versions for screens with different pixel densities,
@@ -262,10 +262,10 @@ you can provide `path` and `srcset` keys instead:
 # file: _config.yml
 author:
   picture:
-    path:   /assets/img/me.jpg
+    path:   /assets/img/yye.jpg
     srcset:
-      1x:   /assets/img/me.jpg
-      2x:   /assets/img/me@2x.jpg
+      1x:   /assets/img/yye.jpg
+      2x:   /assets/img/yye.jpg
 ~~~
 
 The `path` key is a fallback image for browsers that don't support the `srcset` attribute.

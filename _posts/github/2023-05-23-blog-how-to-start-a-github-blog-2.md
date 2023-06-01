@@ -74,7 +74,57 @@ $ bundle exec jekyll serve # 로컬 개발 모드 실행
 블로그를 이제 만들었으니 예쁜 옷을 입혀 볼 차례다. <br>
 처음부터 꾸며도 되지만 구성요소나 작동 방법 등 아무것도 모르므로 잘 나와있는 테마를 입혀서 수정하도록 하자!<br>
 
-Jekyll을 이용한 테마들을 많은 커뮤니티를 통해 다운로드 받아 입힐 수 있다.
+Jekyll을 이용한 테마들을 많은 커뮤니티를 통해 다운로드 받아 입힐 수 있다. <br>
+
+jekyll 테마는 아래와 같은 사이트에서 샘플을 확인 한 후 마음에 드는 테마를 로컬 폴더에 다운로드 시켜두도록 한다. <br>
+
+- http://jekyllthemes.org/ <br>
+- https://jekyll-themes.com/free <br>
+- http://themes.jekyllrc.org/ <br>
+
++) 나는 많이 선택하는 테마 중 하나인 'Hydejack'을 다운로드 했다! <br>
+http://jekyllthemes.org/themes/hydejack/ <br>
+
+<img width="771" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/561ab66f-b37e-437b-8c05-15704a1a3209"> <br>
+
+위 링크에서는 다운로드를 누르면 테마가 담겨있는 압축 폴더가 바로 다운로드 받아진다. <br>
+다른 사이트나 다른 테마가 바로 다운로드가 되지 않아도 해당 테마에 관련한 git 등을 통해 테마 소스 코드가 담겨있는 압축폴더를 다운받아 준비해두면 테마 입힐 준비가 50% 완성된 것이다! <br>
+
+zip 폴더가 준비 되었으면 압축을 풀고 풀어낸 모든 소스코드 들을 앞서 생성해둔 나의 github blog 레포지토리에 그대로 복사하면 테마 입히기 끝! <br>
+
+<p align="center" style="color:gray">
+<img width="462" alt="image" title="" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/30b5859a-e527-4cc7-897a-ef6518bfad8f"> <br>
+압축 푼 hydejack
+</p>
+
+<br>
+
+<p align="center" style="color:gray">
+<img width="463" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/a03a3270-6871-4fb9-bd6c-36e258d34460"> <br>
+로컬 github blog 개발 폴더에 복사/붙여넣기 한 모습
+</p>
+
+<br>
+
+이 상태로 vscode에서 해당 작업 폴더를 열고 터미널을 열어 아래와 같이 입력하면! <br>
+bundle로 jekyll을 이용해 로컬에서 테스트 웹이 구동된다!
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/a9cab842-9ebe-45ac-a108-80c247614723"> <br>
+
+<img width="1238" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/1a545ec4-b309-4569-8a32-bd86e2ceaba3"> <br>
+
+위 이미지는 github blog를 처음 접하고 나서 테마를 커스터마이징 하느라 hydejack 기본 화면에 주소창만 수정 한 화면인데 아마 <span style="color:orange">127.0.0.1:4000</span> 또는 <span style="color:orange">localhost:4000</span>를 주소창에 입력하면 위 화면과 비슷하게 나올 것이다! 
+
+<br>
+
+<p style="color:gray; font-size : 14px"> 메인 화면은 목록이 나왔던거같은데 사이드바는 저 화면이었던 것으로 기억...</p>
+
+<br>
+
+그럼 테마입히기까지 완성! <br>
+다음 포스트는 테마를 나를 나타내는 블로그로 커스터마이징 하는 것을 작성해 볼 것이다! <br>
+
+
+
 
 
 

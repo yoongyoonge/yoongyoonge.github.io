@@ -1,11 +1,11 @@
 ---
-layout: post
 title: 2. github 블로그 만들기 - 테마 설정 (jekyll) 및 주요 속성 변경 
-categories: [blog]
-category: blog
+author: yoongyoonge
+date: 2023-05-23 20:30:00 +0800
+categories: [Blogging]
+#tags: [typography]
 description: >
     jekyll을 이용한 블로그 테마 세팅 과정 / 주요 속성 변경
-author: yye
 ---
 
 ~~~
@@ -122,9 +122,15 @@ bundle로 jekyll을 이용해 로컬에서 테스트 웹이 구동된다!
 
 그럼 테마입히기까지 완성! <br>
 다음 포스트는 테마를 나를 나타내는 블로그로 커스터마이징 하는 것을 작성해 볼 것이다! <br>
+<br>
+<br>
 
 
+<span style="color:orange">**!!) 2023-08-31 업데이트**</span> <br>
+유지보수가 너무 번거로워서 좀 더 관리가 쉬운 테마로 변경했다! <br>
+변경한 테마는 [jekyll-theme-chirpy][jekyll-theme-chirpy]
 
+[jekyll-theme-chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy
 
 
 

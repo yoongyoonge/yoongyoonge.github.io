@@ -1,11 +1,14 @@
 ---
-layout: post
 title: 1. github 블로그 만들기 - 준비 및 환경세팅
-categories: [blog]
-category: blog
+author: yoongyoonge
+date: 2023-05-15 20:30:00 +0800
+categories: [Blogging]
+#tags: [typography]
+#pin: true
+#math: true
+#mermaid: true
 description: >
     github Blog 생성 / github Page 설정
-author: yye
 ---
 
 0. 환경 <br>

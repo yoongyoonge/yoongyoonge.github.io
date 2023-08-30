@@ -1,63 +1,35 @@
 {
-  "name": "hydejack",
-  "version": "7.5.2",
-  "description": "Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com) theme, stolen by [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).",
-  "scripts": {
-    "clean": "rm -f assets/js/hydejack-$npm_package_version.js & rm -f _sass/**/__*/* & wait",
-    "test": "echo \"Warning: no test specified\" && exit 0",
-    "build": "npm run build:js & npm run build:css & wait",
-    "build:js": "webpack --env prod --display-modules --display-optimization-bailout",
-    "build:css": ".scripts/build-css.js",
-    "watch": "npm run watch:js & npm run watch:css",
-    "watch:js": "webpack --progress --colors --watch --env dev",
-    "watch:css": "npm run build:css && onchange '_sass/**/*.scss' -e '_sass/**/__*/*' -- npm run build:css '{{changed}}'",
-    "serve": "bundle exec jekyll serve --port=$npm_package_config_port --host=0.0.0.0",
-    "lint": "eslint _js/src",
-    "dev": "npm run watch & npm run serve",
-    "prepare": "npm run lint && npm run test && npm run clean && npm run build",
-    "resume": "json2yaml _data/resume.json > _data/resume.yml"
-  },
-  "config": {
-    "port": 4000
-  },
-  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
-  "license": "GPL-3.0",
-  "private": true,
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.5",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.2.0",
-    "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.0",
-    "eslint-plugin-react": "^7.10.0",
-    "json2yaml": "^1.1.0",
-    "onchange": "^4.0.0",
-    "re-template-tag": "^2.0.1",
-    "style-loader": "^0.21.0",
-    "webpack": "^3.12.0",
-    "webpack-merge": "^4.1.3",
-    "yargs": "^12.0.1"
-  },
-  "dependencies": {
-    "color": "^3.0.0",
-    "core-js": "^2.5.7",
-    "elem-dataset": "^1.1.1",
-    "hy-drawer": "^1.0.0-pre.21",
-    "hy-push-state": "^1.0.0-pre.21",
-    "rxjs": "^6.2.1",
-    "web-animations-js": "^2.3.1"
-  },
+  "name": "jekyll-theme-chirpy",
+  "version": "6.1.0",
+  "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qwtel/hydejack.git"
+    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
   },
+  "author": "Cotes Chung",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qwtel/hydejack/issues"
+    "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
   },
-  "homepage": "https://github.com/qwtel/hydejack#readme"
+  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy/",
+  "scripts": {
+    "prebuild": "npx rimraf assets/js/dist",
+    "build": "NODE_ENV=production npx rollup -c --bundleConfigAsCjs",
+    "prewatch": "npx rimraf assets/js/dist",
+    "watch": "npx rollup -c --bundleConfigAsCjs -w",
+    "test": "npx stylelint _sass/**/*.scss",
+    "fixlint": "npm run test -- --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.20.2",
+    "rollup-plugin-license": "^3.0.1",
+    "stylelint": "^15.3.0",
+    "stylelint-config-standard-scss": "^9.0.0"
+  }
 }

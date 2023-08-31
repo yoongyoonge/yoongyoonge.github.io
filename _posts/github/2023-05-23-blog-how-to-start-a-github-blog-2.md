@@ -2,8 +2,8 @@
 title: 2. github 블로그 만들기 - 테마 설정 (jekyll) 및 주요 속성 변경 
 author: yoongyoonge
 date: 2023-05-23 20:30:00 +0800
-categories: [Blogging]
-#tags: [typography]
+categories: [Github, Blog]
+tags: [github, blog, git, jekyll]
 description: >
     jekyll을 이용한 블로그 테마 세팅 과정 / 주요 속성 변경
 ---

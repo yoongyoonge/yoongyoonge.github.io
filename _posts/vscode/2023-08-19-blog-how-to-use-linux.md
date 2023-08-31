@@ -2,7 +2,8 @@
 title: window 컴퓨터에서 linux 환경 사용하기, vscode에서 linux환경을 사용하기
 author: yoongyoonge
 date: 2023-08-19 20:30:00 +0800
-categories: [Blogging]
+categories: [VSCode]
+tags: [window, linux, wsl, vscode]
 description: >
     window 컴퓨터에서 linux 환경을 사용하고 싶은데.. 방법이 없을까?
 ---

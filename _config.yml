@@ -18,12 +18,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: yye # the main title
+title: YYE # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 융융이 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  엉금엉금 기어가자
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: https://yoongyoonge.github.io
@@ -31,8 +31,8 @@ url: https://yoongyoonge.github.io
 github:
   username: yoongyoonge # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+#twitter:
+#  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
@@ -47,7 +47,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: googlee2a7935a238c4395.html # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -73,10 +73,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://chirpy-img.netlify.app"
+img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: /assets/img/profile.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -85,11 +85,12 @@ comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: yoongyoonge # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: yoongyoonge/github_comments # <gh-username>/<repo>
+    issue_term: pathname # < url | pathname | title | ...>
+    theme: "photon-dark"
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>

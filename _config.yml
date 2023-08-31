@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: ""
+img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: /assets/img/profile.png
@@ -89,7 +89,7 @@ comments:
   # utterances settings › https://utteranc.es/
   utterances:
     repo: yoongyoonge/github_comments # <gh-username>/<repo>
-    issue_term: pathname # < url | pathname | title | ...>
+    issue_term: "pathname" # < url | pathname | title | ...>
     theme: "photon-dark"
   # Giscus options › https://giscus.app
   giscus:

@@ -10,7 +10,7 @@ baseurl: ""
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: ko-KR
+lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
@@ -37,7 +37,7 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: yunjin nam
+  name: yoongyoonge
   email: namyunjin0912@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -53,7 +53,7 @@ google_site_verification: googlee2a7935a238c4395.html # fill in to your verifica
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-PE31BYBKNF # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -85,12 +85,12 @@ comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: yoongyoonge # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: yoongyoonge/github_comments # <gh-username>/<repo>
-    issue_term: "pathname" # < url | pathname | title | ...>
-    theme: "photon-dark"
+    repo: yoongyoonge/github-comments # <gh-username>/<repo>
+    issue_term: pathname # < url | pathname | title | ...>
+    theme: preferred-color-scheme
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>

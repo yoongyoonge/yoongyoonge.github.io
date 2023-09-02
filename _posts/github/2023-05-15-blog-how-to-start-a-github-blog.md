@@ -1,7 +1,7 @@
 ---
 title: 1. github 블로그 만들기 - 준비 및 환경세팅
 author: yoongyoonge
-date: 2023-05-15 20:30:00 +0800
+date: 2023-05-15 20:30:00 +0900
 categories: [Github, Blog]
 tags: [github, blog, git]
 description: >

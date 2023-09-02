@@ -1,7 +1,7 @@
 ---
 title: window 컴퓨터에서 linux 환경 사용하기, vscode에서 linux환경을 사용하기
 author: yoongyoonge
-date: 2023-08-19 20:30:00 +0800
+date: 2023-08-19 20:30:00 +0900
 categories: [VSCode]
 tags: [window, linux, wsl, vscode]
 description: >

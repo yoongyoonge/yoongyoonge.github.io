@@ -3,7 +3,7 @@ title: Spark Application의 구조와 흐름
 author: yoongyoonge
 date: 2023-09-02 16:45:00 +0900
 categories: [Data Engineering, Apache Spark]
-tags: [spark, study, structure]
+tags: [spark, study, application]
 render_with_liquid: false
 ---
 
@@ -58,14 +58,15 @@ render_with_liquid: false
 ## 2. Spark Application 흐름 정리
 > spark-submit을 하게 되면 다음과 같은 흐름으로 실행됩니다.
 
-1. SparkContext 인스턴스를 시작하고 인스턴스화 <br> (Driver가 main()을 실행하여 SparkSession 실행)
-2. Driver program(SparkContext)은 executor를 시작하기 위해 cluster manager에게 리소스를 요청
-3. cluster manager가 executor를 시작
-4. Driver program은 사용자 애플리케이션을 통해 수행. RDD 작업의 action과 transformation에 따라 executor에 전송 <br>
-SparkContext가 작업할 내용(Job)을 task 단위로 분할하여 Executor로 전송
-5. executor는 task를 실행하고 결과를 저장
-6. 만약 어떤 worker가 이상하면 다른 executor에게 task가 보내지고 다시 처리됨
-7. driver에서 SparkContext.stop()을 하거나 main이 종료되거나 이상이 날 경우 모든 executor가 종료되고 cluster manager가 클러스터 리소스를 해제
+1. Client는 Spark-Submit을 사용하여 application 제출
+2. SparkContext 인스턴스를 시작하고 인스턴스화 <br> (Driver가 main()을 실행하여 SparkSession 실행)
+3. Driver program(SparkContext)은 executor를 시작하기 위해 cluster manager에게 리소스를 요청
+4. cluster manager가 driver 대신 executor를 시작
+5. Driver program은 사용자 애플리케이션을 통해 수행. 프로그램 내 RDD 작업의 action과 transformation에 따라 executor에 전송 <br>
+(SparkContext가 작업할 내용(Job)을 task 단위로 분할하여 Executor로 전송)
+6. executor는 task를 실행하고 결과를 저장
+7. 만약 어떤 worker가 이상하면 다른 executor에게 task가 보내지고 다시 처리됨
+8. driver에서 SparkContext.stop()을 하거나 main이 종료되거나 이상이 날 경우 모든 executor가 종료되고 cluster manager가 클러스터 리소스를 해제
 
 
 <br>

@@ -18,7 +18,8 @@ render_with_liquid: false
 - 주로 spark application 테스트용으로 사용
 - 클라이언트 JVM에 driver 1개, executor 1개를 생성
     - 단, executor에서 여러 개의 core(thread)를 사용하여 task를 병렬로 실행할 수 있음
-- 참고그림 
+- 참고그림  
+
     ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/94c0d76d-3212-4304-b4d3-3a7411e3d81b)
     
 
@@ -59,6 +60,7 @@ render_with_liquid: false
 - 주로 개발과정에서 spark-shell 수행 시 디버깅 등의 용도로 사용됨
     - 따로 지정하지 않으면 기본으로 선택되는 모드
 - 참고 그림
+
     ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/6ed6ae84-71dc-4f85-acfb-ce042c6f5be0)
 
 - 작동방법
@@ -85,6 +87,7 @@ render_with_liquid: false
 - spark application은 클러스터에서 독립적인 프로세스들의 집합으로 실행
 - driver의 sparkContext를 통해 조정
 - 참고 그림
+
 ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/d94def77-c8ec-43d2-a7ed-d9b0e3826fc3)
 - 작동방법
     - 명령어

@@ -1,5 +1,5 @@
 ---
-title: Spark Deploy mode
+title: Spark Deploy Mode
 author: yoongyoonge
 date: 2023-09-02 23:00:00 +0900
 categories: [Data Engineering, Apache Spark]
@@ -104,53 +104,11 @@ render_with_liquid: false
         spark-submit --master k8s://xx.yy.zz.ww:443 --deploy-mode cluster ... 
         ```
 
-<br>
-<br>
-
-## 2. Cluster Mode에서의 Spark Application 동작 흐름
-> 기본 [Spark Application 정리](https://yoongyoonge.github.io/spark-application/)는 링크된 글 내용 중 '2. Spark Application 흐름 정리'을 참고하면 됩니다. <br>
-> 많이 사용하는 cluster manager인 yarn cluster의 경우 어떻게 동작하는지 좀 더 자세히 살펴보겠습니다. <br>
-> 위 링크 글과 이 글에서 나오지 않았던 yarn의 구성에 대한 용어가 나오기 때문에 yarn에 대해 배경지식을 알면 이해하기 좋습니다. <br>
-> spark on yarn 에 대한 아주 좋은 ppt가 [여기](https://www.slideshare.net/FerranGalReniu/yarn-by-default-spark-on-yarn) 있습니다 이 부분은 해당 ppt를 참고하여 작성되었습니다. <br>
-
-1) spark job code 및 아키텍처 <br>
-
-<pre>
-    <code lang="scala">
-    def main(args: Array[String]): Unit = 
-    {
-        val sparkConf = new SparkConf()
-        val sc = new SparkContext(sparkConf)
-    
-        sc.rdd(...).action()
-    
-        sc.stop()
-    }
-    </code>
-</pre>
-
-- spark job 이 나누어지는 과정
-<img width="1600" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/4324da81-8691-4629-ad25-1dfefd05d19d">
-
-- spark job이 spark application 수행 시 할당되는 과정
-<img width="1600" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/5630f0d2-c68b-4eb6-b4d4-963319c567c4">
-
-<br>
-2) spark on yarn 
-
-- yarn의 옵션 중 executor 관련한 configuration
-    ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/8a5c3381-7214-4961-82bf-687db3e36df6)
-
-- --master yarn --deploy-mode client    
-    <img width="1300" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/fc03d181-8f40-4007-9984-9c7f71ca94fe">
-
-
-- --master yarn --deploy-mode cluster   
-    <img width="1014" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/9e3136bf-7072-4d13-acc1-3f56f3d1d505">
+!) yarn cluster 모드에서의 spark application 흐름은 다음의 포스트에 자세히 작성 해두었습니다.
+[YARN cluster mode에서의 spark application 흐름](https://yoongyoonge.github.io/spark-deploy-mode/)
 
 
 참고: <br>
 [Spark Submitting Applications](https://spark.apache.org/docs/latest/submitting-applications.html) <br>
 [spark-in-action-Chapter10](https://livebook.manning.com/book/spark-in-action/chapter-10/1) <br>
 [Spark local mode와 Cluster Manager 및 deploy mode](https://wooono.tistory.com/140) <br>
-[Yarn by default (Spark on YARN)](https://www.slideshare.net/FerranGalReniu/yarn-by-default-spark-on-yarn)

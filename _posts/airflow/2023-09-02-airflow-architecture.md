@@ -68,7 +68,41 @@ render_with_liquid: false
 <br>
 <br>
 
-## 2. DAG의 기본 요소
+
+## 2. Celery Executor가 적용된 airflow 아키텍처
+![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/deeed307-27ba-43e8-bab1-1a5947dfed70)
+
+airflow component
+- worker: 할당된 작업을 실행
+- scheduler: 필요한 작업을 큐에 추가
+- web server: http 서버는 dag/task 상태 정보 제공
+- database: task 상태, dag, 변수, 연결 등에 대한 정보 관리
+- celery: 큐 매커니즘
+
+celery component
+- broker: 실행을 위한 명령 저장
+- result backend: 완료된 명령 상태 저장
+
+<br>
+번호 별 흐름 <br>
+
+(1) Web server –> Workers - task 실행로그 가져옴<br>
+(2) Web server –> DAG files - dag 구조 전달<br>
+(3) Web server –> Database - task 상태 가져옴<br>
+(4) Workers –> DAG files - dag 구조를 전달하고 task 실행<br>
+(5) Workers –> Database - 연결 정보, 변수, xcom에 대한 정보를 가져오고 저장<br>
+(6) Workers –> Celery’s result backend - task 상태 저장<br>
+(7) Workers –> Celery’s broker - 실행을 위한 명령 저장<br>
+(8) Scheduler –> DAG files - dag 구조 전달 및 task 실행<br>
+(9) Scheduler –> Database - dag 실행 및 관련 task 저장<br>
+(10) Scheduler –> Celery’s result backend - 완료된 task 상태에 대한 정보를 가져옴<br>
+(11) Scheduler –> Celery’s broker - 실행할 명령 입력<br>
+
+추가 참고 자료:  
+[Task execution process](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/celery.html)
+
+
+## 3. DAG의 기본 요소
 
 1) Operator: DAG의 대부분을 차지하는 요소이며 빠르게 구성할 수 있는 사전 정의된 작업 <br>
 2) Sensor: 외부 이벤트가 발생하기를 기다리는 operator의 특별한 하위 클래스 <br>

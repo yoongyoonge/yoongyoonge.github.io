@@ -64,7 +64,6 @@ render_with_liquid: false
 - --master yarn --deploy-mode client    
     <img width="1300" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/fc03d181-8f40-4007-9984-9c7f71ca94fe">
     - (1) client에서 spark-submit을 통해 작업이 제출됨
-        - 실행 코드와 환경 정보를 resource manager에게 넘기는데 이때 실행할 파일들은 application ID에 해당하는 HDFS 폴더에 미리 복사됨
     - (2) <span style="color:orange">client에서 driver가 실행</span>되고 driver는 resource manager에게 작업에 필요한 리소스를 요청
     - (3) resource manager는 node manager에 작업가능한 공간인 container를 전달받음
         - 이 때 node manager는 container를 대신 시작
@@ -78,7 +77,6 @@ render_with_liquid: false
 - --master yarn --deploy-mode cluster   
     <img width="1014" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/9e3136bf-7072-4d13-acc1-3f56f3d1d505">
     - (1) client에서 spark-submit을 통해 작업이 제출됨
-        - 실행 코드와 환경 정보를 resource manager에게 넘기는데 이때 실행할 파일들은 application ID에 해당하는 HDFS 폴더에 미리 복사됨
     - (2) <span style="color:orange">resource manager로부터 지정받은 임의의 node manager가 driver(container)를 수헹</span>
     - (3) driver는 resource manager에 작업에 필요한 리소스를 요청
     - (4) resource manager는 node manager에 작업가능한 공간인 container를 전달받음 

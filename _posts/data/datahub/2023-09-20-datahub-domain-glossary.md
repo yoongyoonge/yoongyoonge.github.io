@@ -1,7 +1,7 @@
 ---
-title: [DataHub] domain 기능을 통한 data mesh 강화
+title: DataHub - domain 기능을 통한 data mesh 강화
 author: yoongyoonge
-date: 2023-09-20 21:30:00 +0900
+date: 2023-09-20 22:10:00 +0900
 categories: [Data Engineering, DataHub]
 tags: [study, data, datahub, catalog]
 render_with_liquid: false

@@ -2,7 +2,7 @@
 title: spark + hive 옵션
 author: yoongyoonge
 date: 2023-09-20 21:30:00 +0900
-categories: [Data Engineering, Apache Spark, Apache Hive]
+categories: [Data Engineering, Apache Spark]
 tags: [spark, hive, study, option]
 render_with_liquid: false
 ---

@@ -29,7 +29,7 @@ render_with_liquid: false
   - UI: 데이터 허브의 메뉴를 클릭하여 생성할 수 있고 배포 제어의 이점은 없지만 소규모 변경이나 즉각 반영할 수 있는 장점이 있고 비기술적인 사용자도 쉽게 생성할 수 있다는 이점이 있음
 
 - 데이터를 가져올 때 transformers를 사용해서 용어를 추가할 수 있음
-  - https://datahubproject.io/docs/metadata-ingestion/docs/transformer/intro/
+  - [DataHub - transformer](https://datahubproject.io/docs/metadata-ingestion/docs/transformer/intro/)
 
 
 <br>

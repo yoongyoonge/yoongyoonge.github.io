@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 
 title: YYE # the main title
 
-tagline: 융융이 # it will display as the sub-title
+tagline: 융융이 지식창고 <br> 검색이나 카테고리 메뉴를 통해 더 쉽게 포스트를 찾을 수 있어요! # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   엉금엉금 기어가자

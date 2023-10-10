@@ -41,6 +41,48 @@ render_with_liquid: false
     
         run_this >> log_the_sql >> sleeping_task
     ```
+    (참고) 데코레이터(@)란?
+    - 기존 함수를 입력 받아서 기능이 추가된 새로운 함수 객체로 만들어주는 역할
+
+        ```python
+    
+        # hello 함수 정의
+        def hello():
+            print("hello")
+    
+        # fn를 출력할 때 꾸며주는 deco 함수 정의
+        def deco(fn):
+            def deco_hello():
+                print("*" * 20)    #기능 추가
+                fn()               #기존 함수 호출
+                print("*" * 20)    #기능 추가
+            return deco_hello
+    
+        hello = deco(hello)   # hello 변수는 기능이 추가된 deco_hello 함수 객체를 바인딩
+        hello()
+
+        """ 결과
+        ********************
+        hello 
+        ********************
+        """
+
+        # 이 때, @deco를 사용하면 객체를 바인딩 할 필요 없이 쉽게 위 처럼 작동 하게 할 수 있다.
+        @deco
+        def hello2():
+            print("hello 2")
+
+        hello2()
+
+        """ 결과
+        ********************
+        hello 2
+        ********************
+        """
+
+        ```
+    - [데코레이터 참고 자료](https://wikidocs.net/160127)
+
 - EmailOperator
 
 #### Provider package를 통해 사용할 수 있는 주요 Operator

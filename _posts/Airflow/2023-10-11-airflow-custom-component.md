@@ -13,14 +13,14 @@ render_with_liquid: false
 
 # 1. Custom Hook
 
-## 필요한 경우
+### 필요한 경우
 - API 연동 등의 복잡한 작업의 처리가 필요할 때
 
-## 효과
+### 효과
 - 코드를 캡슐화하고 재활용 가능
 - 데이터베이스와 UI를 통해 자격 증명과 연결된 관리를 사용할 수 있음
 
-## 예시
+### 예시
 ```python
 # 훅생성
 hook = MovielensHook(conn_id="movielens")
@@ -30,7 +30,7 @@ ratings = hook.get_ratings(start_date, end_date)
 hook.close()
 ``` 
 
-## 설계
+### 설계
 - Airflow의 모든 훅은 추상 클래스인 BaseHook 클래스의 서브클래스로 생성
 
 - Airflow 버전 1에서는 BaseHook 클래스의 생성자에 source라는 argument를 반드시 전달해야함, 사용하지 않을 경우 source=None으로 전달
@@ -50,14 +50,14 @@ hook.close()
 
 # 2. Custom Operator
 
-## 필요한 경우**
+### 필요한 경우**
 - 수 많은 단순 반복적인 코드가 필요한 경우
 - 여러 DAG에서 재사용 해야 할 경우
 
-## 효과
+### 효과
 - 반복적인 태스크 수행에 대해 코드의 반복을 최소화 할 수 있음
 
-## 예시
+### 예시
 ```python
 from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
@@ -74,7 +74,7 @@ class MyCustomOperator(BaseOperator):
         ...
 ```
 
-## 설계
+### 설계
 - 인수는 오퍼레이터마다 다르지만, 일반적으로 커넥션ID(원격 시스템을 포함하는 오퍼레이터의 경우)와 작업에 필요한 세부사항(예: 시작/종료 날짜, 쿼리 등)이 포함됨
 
 - BaseOperator 클래스는 generic 인수들을 많이 가지고 있는데, task_id, retries, retry_delay 등과 같고 이를 모두 나열하지 않도록 **kwargs를 사용
@@ -125,7 +125,7 @@ class MyCustomOperator(BaseOperator):
 
 # 3. Custom Sensor
 
-## 예시
+### 예시
 ```python
 from airflow.sensors.base import BaseSensorOperator
 
@@ -137,7 +137,7 @@ class MyCustomSensor(BaseSensorOperator):
     ...
 ```
 
-## 설계
+### 설계
 - BaseSensorOperator 클래스를 상속해야하고 오퍼레이터의 execute 메서드 대신 poke 메서드를 구현해야 함
 - Airflow가 context를 포함하는 단일 인수만을 사용하는 측면에서 센서의 poke 메서드와 오퍼레이터의 execute는 매우 유사
     - 다른점은 poke는 센서 상태를 True/False로 나타내는 boolean 값을 반환
@@ -154,8 +154,9 @@ class MyCustomSensor(BaseSensorOperator):
 2. Custom Hook을 사용하여 Airflow가 지원하지 않는 시스템과 연동할 수 있다.
 3. 개별 워크플로에 특화되거나 Airflow 기본 내장 오퍼레이터로 처리할 수 없는 태스크를 수행하기 위해 커스텀 오퍼레이터를 만들어 사용할 수 있다.
 
+<br><br>
 
-## 예제 실습 환경 조성(WSL에서 docker세팅하기) <br>
+### 예제 실습 환경 조성(WSL에서 docker세팅하기) <br>
 참고자료: <br>
 [Ubuntu Docker 설치하기 및 WSL2 Docker 설치](https://dodo1054.tistory.com/227) <br>
 -> 이 블로그 글 하나로 오류 한번에 해결가능! <br>

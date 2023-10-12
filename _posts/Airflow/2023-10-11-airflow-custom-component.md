@@ -110,18 +110,22 @@ class MyCustomOperator(BaseOperator):
             self._batch_size = batch_size
     ```
     - 만약, 문자열 파라미터에 Jinja 템플릿을 사용하면, Airflow는 execute 메서드를 호출하기 전에 이 값들을 템플릿화
-    - 예시
-    ```python
-    from custom.operators import MovielensFetchRatingsOperator
 
-    fetch_ratings = MovielensFetchRatingsOperator(
-        task_id="fetch_ratings",
-        conn_id="movielens",
-        start_date="{{ds}}",
-        end_date="{{next_ds}}",
-        output_path="/data/custom_operator/{{ds}}.json"
-    )
-    ```
+    - 예시  
+
+        ```python 
+    
+        from custom.operators import     MovielensFetchRatingsOperator
+    
+        fetch_ratings = MovielensFetchRatingsOperator(
+            task_id="fetch_ratings",
+            conn_id="movielens",
+            start_date="{{ds}}",
+            end_date="{{next_ds}}",
+            output_path="/data/custom_operator/{{ds}}.json"
+        )
+    
+        ```
 
 # 3. Custom Sensor
 

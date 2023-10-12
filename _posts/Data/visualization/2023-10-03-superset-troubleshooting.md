@@ -1,5 +1,5 @@
 ---
-title: Superset - troubleshooting
+title: Superset 3.0.0 설치 시 troubleshooting
 author: yoongyoonge
 date: 2023-10-03 22:10:00 +0900
 categories: [Data Engineering, Apache Superset]

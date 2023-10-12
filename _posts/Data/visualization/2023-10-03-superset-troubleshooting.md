@@ -2,7 +2,7 @@
 title: Superset - troubleshooting
 author: yoongyoonge
 date: 2023-10-03 22:10:00 +0900
-categories: [Data Engineering, Superset]
+categories: [Data Engineering, Apache Superset]
 tags: [study, data, visualization, superset, troubleshooting]
 render_with_liquid: false
 ---

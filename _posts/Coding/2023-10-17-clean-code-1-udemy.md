@@ -91,3 +91,8 @@ render_with_liquid: false
     - method를 함부로 추가하면 안된다.
         - method를 선언하면 해당 클래스를 상속받는 모든 코드에 영향이 있다.
         - 해당 클래스를 사용하는 모든 코드가 재컴파일이 필요하다. -> 새로 배포해야한다.
+
+
+강의링크: <br>
+[클린 코드 udemy 강의 - 좋은 코드에 대한 『클린코드』 역자의 생각들](https://www.udemy.com/share/1099Ng3@4FR55rWAAFHklQBRBOkBEVNXrv98JKYEugFz6PIi3n4Uivwz4Gphn9Hc6KnEEaQYkQ==/)
+

@@ -7,7 +7,7 @@ tags: [code, study, coding, clean code]
 render_with_liquid: false
 ---
 
-> **_NOTE:_** 이 포스트는 [클린토드 - 좋은 코드에 대한 '클린코드' 역자의 생각들](https://www.udemy.com/course/yeipvrxp/) 을 보고 정리한 포스트 입니다.
+> **_NOTE:_** 이 포스트는 [클린코드 - 좋은 코드에 대한 '클린코드' 역자의 생각들](https://www.udemy.com/course/yeipvrxp/) 을 보고 정리한 포스트 입니다.
 
 
 # Section 1: 1부 코드 리뷰

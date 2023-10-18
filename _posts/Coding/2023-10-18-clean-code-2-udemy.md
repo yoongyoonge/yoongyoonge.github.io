@@ -1,5 +1,5 @@
 ---
-title: 클린 코드 udemy 강의 - 좋은 코드에 대한 『클린코드』 역자의 생각들
+title: 클린 코드 udemy 강의 Q&A - 좋은 코드에 대한 『클린코드』 역자의 생각들
 author: yoongyoonge
 date: 2023-10-18 20:30:00 +0900
 categories: [Coding, Clean Code]

@@ -19,14 +19,14 @@ Window 환경에서 Linux 환경을 사용하기 위해서는 WSL(Windowns Subsy
 <br>
 
 
-1. 가상 머신 플랫폼 활성화 하기
+# 1. 가상 머신 플랫폼 활성화 하기
     
     제어판 > 프로그램 > 프로그램 및 기능 > Windown 기능 켜기/끄기 > 가상 머신 플랫폼 활성화 후 재부팅
 
     ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/0b5552db-e5f1-4fbb-a1f3-a403d67480e5)
 
 
-2. wsl 설치할 수 있는 os 확인 후 마음에 드는 os 설치하기
+# 2. wsl 설치할 수 있는 os 확인 후 마음에 드는 os 설치하기
 
     설치할 수 있는 os 확인
 
@@ -70,7 +70,7 @@ Window 환경에서 Linux 환경을 사용하기 위해서는 WSL(Windowns Subsy
     <span style="color:orange;font-size:20px">그럼 우분투 설치 완료!</span>
 
 
-3. VSCode 에서 Ubuntu 사용하기
+# 3. VSCode 에서 Ubuntu 사용하기
 
     이제 이 환경을 vscode에서도 사용할 수 있도록 하게 해보려면!
 
@@ -84,5 +84,33 @@ Window 환경에서 Linux 환경을 사용하기 위해서는 WSL(Windowns Subsy
 
     ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/9d9c82ed-6545-4166-8cbd-efc3726d6516)
 
+<br><br>
 
-참고: https://velog.io/@gidskql6671/WSL-WSL2-%EC%84%A4%EC%B9%98-VSCode-%EC%97%B0%EB%8F%99
+# 4. 기타 오류에 대하여 
+
+4.1. ERROR: 0x80370102
+
+> wslregisterdistribution failed with error: 0x80370102 please enable the virtual machine platform windows feature and ensure virtualization is enabled in the bios
+
+해결방법: 
+1) windows 기능 켜기/끄기 검색
+
+2) 아래 그림에서 다음의 기능을 활성화
+    - Linux용 Windows 하위 시스템
+    - Windows 하이퍼바이저 플랫폼
+    - 가상 머신 플랫폼
+
+    ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/9bdfd96a-2324-4055-86e1-cc0a1b233ebb)
+
+
+3) 시스템 재시작
+
+4) 그래도 안된다면?
+- 각 메인보드의 bios 화면에 진입하여 가상환경 관련 설정 활성화하기
+
+
+<br><br>
+
+참고: <br>
+[WSL2설치](https://velog.io/@gidskql6671/WSL-WSL2-%EC%84%A4%EC%B9%98-VSCode-%EC%97%B0%EB%8F%99) <br>
+[WSL 에러 해결](https://velog.io/@jaylnne/WSL-Error-0x80370102-%ED%95%B4%EA%B2%B0)

@@ -93,5 +93,22 @@ description: >
         - 출력 결과 <br>
         ![image](https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/1c3bc05b-bdab-458c-bb6c-71f2470804ee)
 
+    
+
+#### (참고) 주요 수식들 
+
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/d8ebdf3a-c77c-49cf-904f-b5ad778c5a08">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/65b0aa93-794c-482f-9b35-5cf760e29ba7">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/b5c22a43-1361-482a-857c-6ecb40472492">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/9b1d4300-459b-4e56-b94a-7fd228285387">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/b9fb30a0-3713-4b58-bdf9-dd0c30b2bdd4">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/45dbb9fb-de68-4611-9f59-2dde0ea3eccd">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/432d4e83-ef02-4b65-bbd0-5bbe15689044">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/43acb224-69b2-40a0-98ee-02f6cbf9f410">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/85d8b771-3407-4cee-a92b-08b1484fa7ed">
+<img width="500" alt="image" src="https://github.com/yoongyoonge/yoongyoonge.github.io/assets/20895661/2d292369-ac9e-4453-985b-e7cf7d6a37e6">
+
+
 참고자료 <br>
-[Jekyll Github 블로그에 MathJax로 수학식 표시하기](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/)
+[Jekyll Github 블로그에 MathJax로 수학식 표시하기](https://mkkim85.github.io/blog-apply-mathjax-to-jekyll-and-github-pages/) <br>
+[TEXReferenceCard](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf)
